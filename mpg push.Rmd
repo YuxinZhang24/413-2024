@@ -1,0 +1,23 @@
+---
+title: "413 push"
+output: html_document
+date: "2024-02-20"
+---
+```{r}
+#Diamonds
+library(tidyverse)
+```
+
+```{r}
+# use dplyr commands to create a diamonds data table
+# that shows columns price,x,y,and z.
+# Also price value should be greater that 17000
+```
+
+```{r}
+filtered_diamonds <- diamonds %>%
+  filter(price > 17000) %>%
+  select(price, x, y, z)
+head(filtered_diamonds)
+```
+
