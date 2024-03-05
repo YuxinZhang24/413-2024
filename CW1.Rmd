@@ -1,0 +1,30 @@
+---
+title: "413 LAB1"
+author: "Yuxin Zhang"
+output: pdf_document
+date: "2024-01-23"
+---
+#1
+#It is beneficial to construct a function to perform the task. Because it can process or generate output values while reducing code duplication. This also makes the code easier to understand.
+
+#2
+```{r}
+calculate_z_score <- function(observed, mean, std_dev) {
+  z_score <- (observed - mean) / std_dev
+  cat("Z-Score:", z_score, "\n")
+}
+calculate_z_score(25.77, 23.54, 2.442)
+
+```
+
+#3
+```{r}
+number_value <- 32
+prime_number_value <- 11
+result <- (log(number_value) * log10(number_value)) / (prime_number_value^(1/3))
+rounded_result <- round(result, 1)
+cat("Result:", rounded_result, "\n")
+
+```
+
+
